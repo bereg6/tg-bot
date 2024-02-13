@@ -14,7 +14,7 @@ export default function Input(props) {
         )
     } else{
         return(
-            <div>
+            <div className='input'>
                 <label for={props.id}>{props.name}: {value}</label>
                     <input type={props.type} placeholder={props.placeholder} id={props.id} onChange={getValue} ></input>
             </div>

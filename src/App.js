@@ -3,11 +3,6 @@ import Form from './components/form/form.jsx';
 import './App.css';
 import {addToDB} from './DB/db.js';
 
-// export const db = [];
-// export {data};
-
-
-
 function App() {
   return (
     <div className="App">

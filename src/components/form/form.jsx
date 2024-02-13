@@ -7,7 +7,6 @@ const Form = (props) => {
         <form id={props.id}>
             <Input type="text" placeholder='Game name' id='gameName' name='Game name' />
             <Input type="number" placeholder='Price' id='price' name='Price' />
-            {/* <Input type="submit" id='submit' value='Submit' /> */}
         </form>
     )
 }

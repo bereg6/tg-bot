@@ -1,4 +1,3 @@
-// import {addToDB} from '../App.js';
 
 const data = [];
 
@@ -29,8 +28,6 @@ export function addToDB(){
         label[0].innerText = 'Game name:';
         document.querySelector('#price').value = '';
         label[1].innerText = 'Price:';
-        console.log(data);
-        // console.log(document.querySelector('#price'));
         return data.splice(data.length, 0, newElement);
     }
   }
