@@ -1,0 +1,18 @@
+label{
+    margin: 10px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 5px;
+    box-shadow: 0 0 5px #0005;
+    border-width: 0;
+    border-radius: 5px;
+}
+input:focus{
+    border-color: #0000;
+    box-shadow: 0 0 5px #000d;
+}
+#submit{
+    margin-top: 20px;
+}
