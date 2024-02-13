@@ -1,19 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './input.css';
 
-const Input = (props) => {
-    // if(props.type === 'submit'){
-    //     return(
-    //         <input type={props.type} id={props.id} value={props.value}></input>
-    //     )
-    // } else{
-        return(
-            <label>
-                {props.name}
-                <input type={props.type} placeholder={props.placeholder} id={props.id} value={props.value}></input>
-            </label>
-    )
-    }
-// }
+export default function Input(props) {
+    const [value, setValue] = useState('');
 
-export default Input;
+    const getValue = (el) => {
+       setValue(el.target.value);
+    }
+
+    if( props.type ==='submit'){
+        return(
+                <input type={props.type} placeholder={props.placeholder} id={props.id}></input>
+        )
+    } else{
+        return(
+            <div>
+                <label for={props.id}>{props.name}: {value}</label>
+                    <input type={props.type} placeholder={props.placeholder} id={props.id} onChange={getValue} ></input>
+            </div>
+        )
+    }
+    }
